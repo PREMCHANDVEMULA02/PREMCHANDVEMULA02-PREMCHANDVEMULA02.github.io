@@ -1,35 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PREMCHAND VEMULA | Data Science Portfolio</title>
+  <title>PREM CHAND VEMULA | Data Science Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-    body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
-    .hero { background-color: #1f1f1f; text-align: center; padding: 100px 0; }
-    .hero img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #fff; margin-bottom: 15px; }
+    body { background-color: #121212; color: #f0f0f0; font-family: 'Segoe UI', sans-serif; }
     a { color: #58a6ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    section { padding: 60px 20px; }
+    .hero { display: flex; flex-wrap: wrap; align-items: center; background-color: #1f1f1f; padding: 60px 20px; }
+    .hero img { width: 180px; height: 180px; border-radius: 50%; border: 4px solid #fff; margin: auto; display: block; }
+    .info { flex: 1; padding: 20px; text-align: left; }
+    .info h1 { font-size: 2.5rem; font-weight: bold; }
+    .info p { font-size: 1.1rem; }
+    section { padding: 40px 20px; }
     .project-card { background-color: #1e1e1e; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-    footer { background-color: #0d0d0d; padding: 20px; text-align: center; color: #aaa; }
-    .icon { font-size: 1.2rem; margin-right: 8px; }
     .skills span { display: inline-block; background: #2d2d2d; padding: 8px 12px; border-radius: 5px; margin: 5px; }
+    footer { background-color: #0d0d0d; padding: 20px; text-align: center; color: #aaa; }
+    .social-icons a { color: white; margin: 0 10px; font-size: 1.5rem; }
   </style>
 </head>
 <body>
 
-<header class="hero">
-  <div class="container">
+<header class="hero container">
+  <div class="col-md-3 text-center">
     <img src="profile.jpg" alt="Profile Picture">
+  </div>
+  <div class="info col-md-9">
     <h1>PREMCHAND VEMULA</h1>
     <p>Aspiring Data Scientist | Python | Machine Learning | NLP</p>
-    <a href="resume.pdf" class="btn btn-outline-light mt-3" download>Download Resume</a>
+    <a href="resume.pdf" class="btn btn-outline-light btn-sm mb-3" download>Download Resume</a>
   </div>
 </header>
+
+<section class="container" id="about">
+  <h2 class="mb-4">About</h2>
+  <p>
+    A passionate Electronics and Communication Engineering graduate, aspiring to become a Data Scientist.
+    Skilled in Python, machine learning, and data visualization. I enjoy solving real-world problems through
+    data-driven approaches and thrive in collaborative, growth-oriented environments.
+  </p>
+</section>
+
+<section class="container" id="skills">
+  <h2 class="mb-4">Skill Set</h2>
+  <div class="skills">
+    <span>Core Python</span>
+    <span>Python Libraries</span>
+    <span>Machine Learning Algorithms</span>
+    <span>NLP</span>
+    <span>MySQL</span>
+    <span>Power BI</span>
+    <span>Advanced Excel</span>
+  </div>
+</section>
 
 <section class="container" id="projects">
   <h2 class="mb-4">Projects</h2>
@@ -39,43 +65,24 @@
   </div>
   <div class="project-card">
     <h5><a href="https://github.com/PREMCHANDVEMULA02/Ecommerce_sales_powerbi" target="_blank">📊 E-commerce Sales Dashboard</a></h5>
-    <p>Interactive dashboard built in Power BI to visualize Indian e-commerce data.</p>
+    <p>Power BI dashboard analyzing sales across Indian regions with category insights.</p>
   </div>
   <div class="project-card">
     <h5><a href="https://github.com/PREMCHANDVEMULA02/Sales-Profit-Customer-Metrics-Using-Advanced-Excel" target="_blank">📈 Sales & Customer Metrics (Excel)</a></h5>
-    <p>Advanced Excel dashboards for tracking KPIs and customer insights.</p>
+    <p>Excel dashboards analyzing customer satisfaction, sales, and order performance.</p>
   </div>
   <div class="project-card">
     <h5><a href="https://github.com/PREMCHANDVEMULA02/sentimental_analysis_for_financial_news_NLP" target="_blank">🧠 Sentiment Analysis for Financial News</a></h5>
-    <p>Classifies financial articles as positive, negative, or neutral using NLP.</p>
+    <p>NLP project classifying financial news into sentiment categories using ML models.</p>
   </div>
-</section>
-
-<section class="container" id="skills">
-  <h2 class="mb-4">Skill Set</h2>
-  <div class="skills">
-    <span>Python</span>
-    <span>MySQL</span>
-    <span>Power BI</span>
-    <span>Excel</span>
-    <span>Machine Learning</span>
-    <span>NLP</span>
-    <span>EDA</span>
-    <span>Google Colab</span>
-    <span>Visual Studio</span>
-    <span>Communication</span>
-    <span>Teamwork</span>
-  </div>
-</section>
-
-<section class="container" id="contact">
-  <h2 class="mb-4">Contact</h2>
-  <p><i class="bi bi-envelope-fill icon"></i><a href="mailto:premchandvemulaofficial@gmail.com">premchandvemulaofficial@gmail.com</a></p>
-  <p><i class="bi bi-github icon"></i><a href="https://github.com/PREMCHANDVEMULA02" target="_blank">github.com/PREMCHANDVEMULA02</a></p>
-  <p><i class="bi bi-linkedin icon"></i><a href="https://linkedin.com/in/prem-chand-vemula-230b16259" target="_blank">linkedin.com/in/prem-chand-vemula-230b16259</a></p>
 </section>
 
 <footer>
+  <div class="social-icons mb-2">
+    <a href="mailto:premchandvemulaofficial@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+    <a href="https://github.com/PREMCHANDVEMULA02" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://linkedin.com/in/prem-chand-vemula-230b16259" target="_blank"><i class="bi bi-linkedin"></i></a>
+  </div>
   &copy; 2025 PREMCHAND VEMULA. All rights reserved.
 </footer>
 
